@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Main(){
     return(
-        <ul className="nav">
+        <ul className="nav shadow mb-2 d-flex justify-content-center">
             <li className="nav-item">
                 <NavLink className="nav-link" exact to="/" activeClassName="active">Home</NavLink>
             </li>
