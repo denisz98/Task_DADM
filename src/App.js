@@ -9,9 +9,15 @@ import Main from './pages/components/nav/Main';
 import './App.css';
 
 function App() {
-  return <Home/>
-  
-  
+  return (
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
+    </BrowserRouter>
+  )
   
 }
 
